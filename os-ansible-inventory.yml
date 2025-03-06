@@ -13,7 +13,7 @@
 
     - name: Write dynamic inventory to file on localhost
       template:
-        src: dynamic_inventory.j2
+        src: os-template.j2
         dest: ./new_inventory.ini
       delegate_to: localhost
       run_once: true
